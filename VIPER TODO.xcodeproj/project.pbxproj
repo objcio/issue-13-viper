@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5519B141192FC6D800537ED4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5519B140192FC6D800537ED4 /* Images.xcassets */; };
+		557C64CB192A782C008AF5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557C64CA192A782C008AF5BA /* Foundation.framework */; };
+		557C64CD192A782C008AF5BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557C64CC192A782C008AF5BA /* CoreGraphics.framework */; };
+		557C64CF192A782C008AF5BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557C64CE192A782C008AF5BA /* UIKit.framework */; };
+		557C64D5192A782C008AF5BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 557C64D3192A782C008AF5BA /* InfoPlist.strings */; };
+		557C64D7192A782C008AF5BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C64D6192A782C008AF5BA /* main.m */; };
+		557C64EA192A782C008AF5BA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557C64E9192A782C008AF5BA /* XCTest.framework */; };
+		557C64EB192A782C008AF5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557C64CA192A782C008AF5BA /* Foundation.framework */; };
+		557C64EC192A782C008AF5BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557C64CE192A782C008AF5BA /* UIKit.framework */; };
+		557C64F4192A782C008AF5BA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 557C64F2192A782C008AF5BA /* InfoPlist.strings */; };
+		557C64F6192A782C008AF5BA /* VIPER_TODOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C64F5192A782C008AF5BA /* VIPER_TODOTests.m */; };
+		557C650B192A7909008AF5BA /* VTDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C6503192A7909008AF5BA /* VTDAppDelegate.m */; };
+		557C653D192A7C8D008AF5BA /* VTDRootWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C653C192A7C8D008AF5BA /* VTDRootWireframe.m */; };
+		557C655E192A8C77008AF5BA /* VTDListInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C654B192A8C77008AF5BA /* VTDListInteractor.m */; };
+		557C655F192A8C77008AF5BA /* VTDListDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C654E192A8C77008AF5BA /* VTDListDataManager.m */; };
+		557C6563192A8C77008AF5BA /* VTDListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C6559192A8C77008AF5BA /* VTDListPresenter.m */; };
+		557C6564192A8C77008AF5BA /* VTDListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C655C192A8C77008AF5BA /* VTDListViewController.m */; };
+		557C6568192A8DC9008AF5BA /* VTDListWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 557C6567192A8DC9008AF5BA /* VTDListWireframe.m */; };
+		5584BC3B192BFD8A006BE9FC /* VTDAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5584BC3A192BFD8A006BE9FC /* VTDAddViewController.m */; };
+		5584BC3F192BFDAC006BE9FC /* VTDAddWireframe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5584BC3E192BFDAC006BE9FC /* VTDAddWireframe.m */; };
+		5584BC42192BFDBA006BE9FC /* VTDAddPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5584BC41192BFDBA006BE9FC /* VTDAddPresenter.m */; };
+		5584BC48192C0683006BE9FC /* VTDAddDismissalTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5584BC45192C0683006BE9FC /* VTDAddDismissalTransition.m */; };
+		5584BC49192C0683006BE9FC /* VTDAddPresentationTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 5584BC47192C0683006BE9FC /* VTDAddPresentationTransition.m */; };
+		5584BC4F192C07C6006BE9FC /* NSCalendar+CalendarAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5584BC4C192C07C6006BE9FC /* NSCalendar+CalendarAdditions.m */; };
+		5584BC50192C07C6006BE9FC /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5584BC4E192C07C6006BE9FC /* UIImage+ImageEffects.m */; };
+		5584BC52192D3F08006BE9FC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5584BC51192D3F08006BE9FC /* CoreData.framework */; };
+		55999882192D47BE0093721B /* VTDAddDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55999881192D47BE0093721B /* VTDAddDataManager.m */; };
+		55999885192D493E0093721B /* VTDAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 55999884192D493E0093721B /* VTDAppDependencies.m */; };
+		559998C9192E51400093721B /* VTDAddInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 559998C8192E51400093721B /* VTDAddInteractor.m */; };
+		559998D9192E71040093721B /* VTDManagedTodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 559998D4192E71040093721B /* VTDManagedTodoItem.m */; };
+		559998DA192E71040093721B /* TODO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 559998D5192E71040093721B /* TODO.xcdatamodeld */; };
+		559998DB192E71040093721B /* VTDCoreDataStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 559998D8192E71040093721B /* VTDCoreDataStore.m */; };
+		559998DE192E71460093721B /* VTDTodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 559998DD192E71460093721B /* VTDTodoItem.m */; };
+		CF775167192EAB0300B86F79 /* VTDUpcomingDisplayData.m in Sources */ = {isa = PBXBuildFile; fileRef = CF775166192EAB0300B86F79 /* VTDUpcomingDisplayData.m */; };
+		CF77516A192EAB4300B86F79 /* VTDUpcomingDisplaySection.m in Sources */ = {isa = PBXBuildFile; fileRef = CF775169192EAB4300B86F79 /* VTDUpcomingDisplaySection.m */; };
+		CF77516D192EAB9A00B86F79 /* VTDUpcomingDisplayItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CF77516C192EAB9A00B86F79 /* VTDUpcomingDisplayItem.m */; };
+		CF775170192EAF7800B86F79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF77516E192EAF7800B86F79 /* Main.storyboard */; };
+		CF775173192FB24F00B86F79 /* VTDUpcomingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CF775172192FB24F00B86F79 /* VTDUpcomingItem.m */; };
+		CF775177192FCCFA00B86F79 /* VTDUpcomingDisplayDataCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = CF775176192FCCFA00B86F79 /* VTDUpcomingDisplayDataCollector.m */; };
+		CF77517A192FE75E00B86F79 /* NSArray+HOM.m in Sources */ = {isa = PBXBuildFile; fileRef = CF775179192FE75E00B86F79 /* NSArray+HOM.m */; };
+		CF77517C19350DF600B86F79 /* VTDListInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF77517B19350DF600B86F79 /* VTDListInteractorTests.m */; };
+		CF77518719352B2100B86F79 /* libOCMock.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF77517F193529B800B86F79 /* libOCMock.a */; };
+		CF77518C19355B7600B86F79 /* VTDDeviceClock.m in Sources */ = {isa = PBXBuildFile; fileRef = CF77518B19355B7600B86F79 /* VTDDeviceClock.m */; };
+		CF77518E19375DF600B86F79 /* VTDListPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF77518D19375DF600B86F79 /* VTDListPresenterTests.m */; };
+		CF7751901938B00400B86F79 /* VTDListViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF77518F1938B00400B86F79 /* VTDListViewTests.m */; };
+		CFEAA0E9192B0143006C8048 /* VTDRelativeDateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEAA0E8192B0143006C8048 /* VTDRelativeDateTests.m */; };
+		CFEAA0EE192B5BBB006C8048 /* VTDCalendarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CFEAA0ED192B5BBB006C8048 /* VTDCalendarTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		557C64ED192A782C008AF5BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 557C64BF192A782C008AF5BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 557C64C6192A782C008AF5BA;
+			remoteInfo = "VIPER TODO";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5519B140192FC6D800537ED4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "VIPER TODO/Images.xcassets"; sourceTree = SOURCE_ROOT; };
+		557C64C7192A782C008AF5BA /* VIPER TODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER TODO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		557C64CA192A782C008AF5BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		557C64CC192A782C008AF5BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		557C64CE192A782C008AF5BA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		557C64D2192A782C008AF5BA /* VIPER TODO-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VIPER TODO-Info.plist"; sourceTree = "<group>"; };
+		557C64D4192A782C008AF5BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		557C64D6192A782C008AF5BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		557C64D8192A782C008AF5BA /* VIPER TODO-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VIPER TODO-Prefix.pch"; sourceTree = "<group>"; };
+		557C64E8192A782C008AF5BA /* VIPER TODOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VIPER TODOTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		557C64E9192A782C008AF5BA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		557C64F1192A782C008AF5BA /* VIPER TODOTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VIPER TODOTests-Info.plist"; sourceTree = "<group>"; };
+		557C64F3192A782C008AF5BA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		557C64F5192A782C008AF5BA /* VIPER_TODOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VIPER_TODOTests.m; sourceTree = "<group>"; };
+		557C6502192A7909008AF5BA /* VTDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDAppDelegate.h; sourceTree = "<group>"; };
+		557C6503192A7909008AF5BA /* VTDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDAppDelegate.m; sourceTree = "<group>"; };
+		557C653B192A7C8D008AF5BA /* VTDRootWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDRootWireframe.h; sourceTree = "<group>"; };
+		557C653C192A7C8D008AF5BA /* VTDRootWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDRootWireframe.m; sourceTree = "<group>"; };
+		557C654A192A8C77008AF5BA /* VTDListInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDListInteractor.h; sourceTree = "<group>"; };
+		557C654B192A8C77008AF5BA /* VTDListInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDListInteractor.m; sourceTree = "<group>"; };
+		557C654D192A8C77008AF5BA /* VTDListDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDListDataManager.h; sourceTree = "<group>"; };
+		557C654E192A8C77008AF5BA /* VTDListDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDListDataManager.m; sourceTree = "<group>"; };
+		557C6558192A8C77008AF5BA /* VTDListPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDListPresenter.h; sourceTree = "<group>"; };
+		557C6559192A8C77008AF5BA /* VTDListPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDListPresenter.m; sourceTree = "<group>"; };
+		557C655B192A8C77008AF5BA /* VTDListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDListViewController.h; sourceTree = "<group>"; };
+		557C655C192A8C77008AF5BA /* VTDListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDListViewController.m; sourceTree = "<group>"; };
+		557C655D192A8C77008AF5BA /* VTDListViewInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDListViewInterface.h; sourceTree = "<group>"; };
+		557C6566192A8DC9008AF5BA /* VTDListWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDListWireframe.h; sourceTree = "<group>"; };
+		557C6567192A8DC9008AF5BA /* VTDListWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDListWireframe.m; sourceTree = "<group>"; };
+		5584BC39192BFD8A006BE9FC /* VTDAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDAddViewController.h; sourceTree = "<group>"; };
+		5584BC3A192BFD8A006BE9FC /* VTDAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDAddViewController.m; sourceTree = "<group>"; };
+		5584BC3C192BFD9B006BE9FC /* VTDAddViewInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDAddViewInterface.h; sourceTree = "<group>"; };
+		5584BC3D192BFDAC006BE9FC /* VTDAddWireframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDAddWireframe.h; sourceTree = "<group>"; };
+		5584BC3E192BFDAC006BE9FC /* VTDAddWireframe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDAddWireframe.m; sourceTree = "<group>"; };
+		5584BC40192BFDBA006BE9FC /* VTDAddPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDAddPresenter.h; sourceTree = "<group>"; };
+		5584BC41192BFDBA006BE9FC /* VTDAddPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDAddPresenter.m; sourceTree = "<group>"; };
+		5584BC44192C0683006BE9FC /* VTDAddDismissalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDAddDismissalTransition.h; sourceTree = "<group>"; };
+		5584BC45192C0683006BE9FC /* VTDAddDismissalTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDAddDismissalTransition.m; sourceTree = "<group>"; };
+		5584BC46192C0683006BE9FC /* VTDAddPresentationTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDAddPresentationTransition.h; sourceTree = "<group>"; };
+		5584BC47192C0683006BE9FC /* VTDAddPresentationTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDAddPresentationTransition.m; sourceTree = "<group>"; };
+		5584BC4B192C07C6006BE9FC /* NSCalendar+CalendarAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSCalendar+CalendarAdditions.h"; sourceTree = "<group>"; };
+		5584BC4C192C07C6006BE9FC /* NSCalendar+CalendarAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSCalendar+CalendarAdditions.m"; sourceTree = "<group>"; };
+		5584BC4D192C07C6006BE9FC /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		5584BC4E192C07C6006BE9FC /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		5584BC51192D3F08006BE9FC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		55999880192D47BE0093721B /* VTDAddDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDAddDataManager.h; sourceTree = "<group>"; };
+		55999881192D47BE0093721B /* VTDAddDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDAddDataManager.m; sourceTree = "<group>"; };
+		55999883192D493E0093721B /* VTDAppDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDAppDependencies.h; sourceTree = "<group>"; };
+		55999884192D493E0093721B /* VTDAppDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDAppDependencies.m; sourceTree = "<group>"; };
+		559998C7192E51400093721B /* VTDAddInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDAddInteractor.h; sourceTree = "<group>"; };
+		559998C8192E51400093721B /* VTDAddInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDAddInteractor.m; sourceTree = "<group>"; };
+		559998CB192E54D20093721B /* VTDAddModuleDelegateInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDAddModuleDelegateInterface.h; sourceTree = "<group>"; };
+		559998CD192E61B20093721B /* VTDListModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDListModuleInterface.h; sourceTree = "<group>"; };
+		559998CE192E621A0093721B /* VTDAddModuleInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDAddModuleInterface.h; sourceTree = "<group>"; };
+		559998D3192E71040093721B /* VTDManagedTodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDManagedTodoItem.h; sourceTree = "<group>"; };
+		559998D4192E71040093721B /* VTDManagedTodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDManagedTodoItem.m; sourceTree = "<group>"; };
+		559998D6192E71040093721B /* TODO.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TODO.xcdatamodel; sourceTree = "<group>"; };
+		559998D7192E71040093721B /* VTDCoreDataStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDCoreDataStore.h; sourceTree = "<group>"; };
+		559998D8192E71040093721B /* VTDCoreDataStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDCoreDataStore.m; sourceTree = "<group>"; };
+		559998DC192E71460093721B /* VTDTodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDTodoItem.h; sourceTree = "<group>"; };
+		559998DD192E71460093721B /* VTDTodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDTodoItem.m; sourceTree = "<group>"; };
+		CF775165192EAB0300B86F79 /* VTDUpcomingDisplayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDUpcomingDisplayData.h; sourceTree = "<group>"; };
+		CF775166192EAB0300B86F79 /* VTDUpcomingDisplayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDUpcomingDisplayData.m; sourceTree = "<group>"; };
+		CF775168192EAB4300B86F79 /* VTDUpcomingDisplaySection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDUpcomingDisplaySection.h; sourceTree = "<group>"; };
+		CF775169192EAB4300B86F79 /* VTDUpcomingDisplaySection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDUpcomingDisplaySection.m; sourceTree = "<group>"; };
+		CF77516B192EAB9A00B86F79 /* VTDUpcomingDisplayItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDUpcomingDisplayItem.h; sourceTree = "<group>"; };
+		CF77516C192EAB9A00B86F79 /* VTDUpcomingDisplayItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDUpcomingDisplayItem.m; sourceTree = "<group>"; };
+		CF77516F192EAF7800B86F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "VIPER TODO/Base.lproj/Main.storyboard"; sourceTree = SOURCE_ROOT; };
+		CF775171192FB24F00B86F79 /* VTDUpcomingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDUpcomingItem.h; sourceTree = "<group>"; };
+		CF775172192FB24F00B86F79 /* VTDUpcomingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDUpcomingItem.m; sourceTree = "<group>"; };
+		CF775174192FB28700B86F79 /* VTDNearTermDateRelation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDNearTermDateRelation.h; sourceTree = "<group>"; };
+		CF775175192FCCFA00B86F79 /* VTDUpcomingDisplayDataCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDUpcomingDisplayDataCollector.h; sourceTree = "<group>"; };
+		CF775176192FCCFA00B86F79 /* VTDUpcomingDisplayDataCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDUpcomingDisplayDataCollector.m; sourceTree = "<group>"; };
+		CF775178192FE75E00B86F79 /* NSArray+HOM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HOM.h"; sourceTree = "<group>"; };
+		CF775179192FE75E00B86F79 /* NSArray+HOM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HOM.m"; sourceTree = "<group>"; };
+		CF77517B19350DF600B86F79 /* VTDListInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDListInteractorTests.m; sourceTree = "<group>"; };
+		CF77517D193527AB00B86F79 /* VTDListInteractorIO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDListInteractorIO.h; sourceTree = "<group>"; };
+		CF77517F193529B800B86F79 /* libOCMock.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libOCMock.a; path = OCMock/libOCMock.a; sourceTree = "<group>"; };
+		CF775181193529E400B86F79 /* NSNotificationCenter+OCMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+OCMAdditions.h"; path = "OCMock/OCMock/NSNotificationCenter+OCMAdditions.h"; sourceTree = SOURCE_ROOT; };
+		CF775182193529E400B86F79 /* OCMArg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMArg.h; path = OCMock/OCMock/OCMArg.h; sourceTree = SOURCE_ROOT; };
+		CF775183193529E400B86F79 /* OCMConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMConstraint.h; path = OCMock/OCMock/OCMConstraint.h; sourceTree = SOURCE_ROOT; };
+		CF775184193529E400B86F79 /* OCMock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMock.h; path = OCMock/OCMock/OCMock.h; sourceTree = SOURCE_ROOT; };
+		CF775185193529E400B86F79 /* OCMockObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockObject.h; path = OCMock/OCMock/OCMockObject.h; sourceTree = SOURCE_ROOT; };
+		CF775186193529E400B86F79 /* OCMockRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMockRecorder.h; path = OCMock/OCMock/OCMockRecorder.h; sourceTree = SOURCE_ROOT; };
+		CF77518919352ED300B86F79 /* VTDClock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VTDClock.h; sourceTree = "<group>"; };
+		CF77518A19355B7600B86F79 /* VTDDeviceClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VTDDeviceClock.h; sourceTree = "<group>"; };
+		CF77518B19355B7600B86F79 /* VTDDeviceClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDDeviceClock.m; sourceTree = "<group>"; };
+		CF77518D19375DF600B86F79 /* VTDListPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDListPresenterTests.m; sourceTree = "<group>"; };
+		CF77518F1938B00400B86F79 /* VTDListViewTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDListViewTests.m; sourceTree = "<group>"; };
+		CFEAA0E8192B0143006C8048 /* VTDRelativeDateTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = VTDRelativeDateTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		CFEAA0ED192B5BBB006C8048 /* VTDCalendarTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VTDCalendarTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		557C64C4192A782C008AF5BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5584BC52192D3F08006BE9FC /* CoreData.framework in Frameworks */,
+				557C64CD192A782C008AF5BA /* CoreGraphics.framework in Frameworks */,
+				557C64CF192A782C008AF5BA /* UIKit.framework in Frameworks */,
+				557C64CB192A782C008AF5BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557C64E5192A782C008AF5BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF77518719352B2100B86F79 /* libOCMock.a in Frameworks */,
+				557C64EA192A782C008AF5BA /* XCTest.framework in Frameworks */,
+				557C64EC192A782C008AF5BA /* UIKit.framework in Frameworks */,
+				557C64EB192A782C008AF5BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		557C64BE192A782C008AF5BA = {
+			isa = PBXGroup;
+			children = (
+				557C64D0192A782C008AF5BA /* VIPER TODO */,
+				557C64EF192A782C008AF5BA /* VIPER TODOTests */,
+				557C64C9192A782C008AF5BA /* Frameworks */,
+				557C64C8192A782C008AF5BA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		557C64C8192A782C008AF5BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				557C64C7192A782C008AF5BA /* VIPER TODO.app */,
+				557C64E8192A782C008AF5BA /* VIPER TODOTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		557C64C9192A782C008AF5BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF77517F193529B800B86F79 /* libOCMock.a */,
+				5584BC51192D3F08006BE9FC /* CoreData.framework */,
+				557C64CA192A782C008AF5BA /* Foundation.framework */,
+				557C64CC192A782C008AF5BA /* CoreGraphics.framework */,
+				557C64CE192A782C008AF5BA /* UIKit.framework */,
+				557C64E9192A782C008AF5BA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		557C64D0192A782C008AF5BA /* VIPER TODO */ = {
+			isa = PBXGroup;
+			children = (
+				557C64FF192A7909008AF5BA /* Classes */,
+				557C650C192A792B008AF5BA /* Resources */,
+				557C64D1192A782C008AF5BA /* Supporting Files */,
+				CF77517E1935298C00B86F79 /* OCMock */,
+			);
+			path = "VIPER TODO";
+			sourceTree = "<group>";
+		};
+		557C64D1192A782C008AF5BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				557C64D2192A782C008AF5BA /* VIPER TODO-Info.plist */,
+				557C64D3192A782C008AF5BA /* InfoPlist.strings */,
+				557C64D6192A782C008AF5BA /* main.m */,
+				557C64D8192A782C008AF5BA /* VIPER TODO-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		557C64EF192A782C008AF5BA /* VIPER TODOTests */ = {
+			isa = PBXGroup;
+			children = (
+				557C64F5192A782C008AF5BA /* VIPER_TODOTests.m */,
+				CFEAA0E8192B0143006C8048 /* VTDRelativeDateTests.m */,
+				CFEAA0ED192B5BBB006C8048 /* VTDCalendarTests.m */,
+				CF77517B19350DF600B86F79 /* VTDListInteractorTests.m */,
+				CF77518D19375DF600B86F79 /* VTDListPresenterTests.m */,
+				CF77518F1938B00400B86F79 /* VTDListViewTests.m */,
+				557C64F0192A782C008AF5BA /* Supporting Files */,
+			);
+			path = "VIPER TODOTests";
+			sourceTree = "<group>";
+		};
+		557C64F0192A782C008AF5BA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				557C64F1192A782C008AF5BA /* VIPER TODOTests-Info.plist */,
+				557C64F2192A782C008AF5BA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		557C64FF192A7909008AF5BA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				557C6500192A7909008AF5BA /* Common */,
+				557C6504192A7909008AF5BA /* Modules */,
+				557C6502192A7909008AF5BA /* VTDAppDelegate.h */,
+				557C6503192A7909008AF5BA /* VTDAppDelegate.m */,
+				55999883192D493E0093721B /* VTDAppDependencies.h */,
+				55999884192D493E0093721B /* VTDAppDependencies.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		557C6500192A7909008AF5BA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				5584BC4A192C07C6006BE9FC /* Categories */,
+				CF77518819352EBD00B86F79 /* Clock */,
+				559998D0192E71040093721B /* Model */,
+				559998D1192E71040093721B /* Store */,
+				557C653A192A7C7A008AF5BA /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		557C6504192A7909008AF5BA /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5584BC2F192BFD06006BE9FC /* Add */,
+				557C6547192A8C77008AF5BA /* List */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		557C650C192A792B008AF5BA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5519B140192FC6D800537ED4 /* Images.xcassets */,
+				CF77516E192EAF7800B86F79 /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		557C653A192A7C7A008AF5BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				557C653B192A7C8D008AF5BA /* VTDRootWireframe.h */,
+				557C653C192A7C8D008AF5BA /* VTDRootWireframe.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		557C6547192A8C77008AF5BA /* List */ = {
+			isa = PBXGroup;
+			children = (
+				557C6548192A8C77008AF5BA /* Application Logic */,
+				559998CC192E61A50093721B /* Module Interface */,
+				557C6556192A8C77008AF5BA /* User Interface */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		557C6548192A8C77008AF5BA /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				557C6549192A8C77008AF5BA /* Interactor */,
+				557C654C192A8C77008AF5BA /* Manager */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		557C6549192A8C77008AF5BA /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				CF77517D193527AB00B86F79 /* VTDListInteractorIO.h */,
+				557C654A192A8C77008AF5BA /* VTDListInteractor.h */,
+				557C654B192A8C77008AF5BA /* VTDListInteractor.m */,
+				CF775171192FB24F00B86F79 /* VTDUpcomingItem.h */,
+				CF775172192FB24F00B86F79 /* VTDUpcomingItem.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		557C654C192A8C77008AF5BA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				557C654D192A8C77008AF5BA /* VTDListDataManager.h */,
+				557C654E192A8C77008AF5BA /* VTDListDataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		557C6556192A8C77008AF5BA /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				557C6557192A8C77008AF5BA /* Presenter */,
+				557C655A192A8C77008AF5BA /* View */,
+				557C6565192A8DBD008AF5BA /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		557C6557192A8C77008AF5BA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				557C6558192A8C77008AF5BA /* VTDListPresenter.h */,
+				557C6559192A8C77008AF5BA /* VTDListPresenter.m */,
+				CF775175192FCCFA00B86F79 /* VTDUpcomingDisplayDataCollector.h */,
+				CF775176192FCCFA00B86F79 /* VTDUpcomingDisplayDataCollector.m */,
+				CF775165192EAB0300B86F79 /* VTDUpcomingDisplayData.h */,
+				CF775166192EAB0300B86F79 /* VTDUpcomingDisplayData.m */,
+				CF775168192EAB4300B86F79 /* VTDUpcomingDisplaySection.h */,
+				CF775169192EAB4300B86F79 /* VTDUpcomingDisplaySection.m */,
+				CF77516B192EAB9A00B86F79 /* VTDUpcomingDisplayItem.h */,
+				CF77516C192EAB9A00B86F79 /* VTDUpcomingDisplayItem.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		557C655A192A8C77008AF5BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				557C655B192A8C77008AF5BA /* VTDListViewController.h */,
+				557C655C192A8C77008AF5BA /* VTDListViewController.m */,
+				557C655D192A8C77008AF5BA /* VTDListViewInterface.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		557C6565192A8DBD008AF5BA /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				557C6566192A8DC9008AF5BA /* VTDListWireframe.h */,
+				557C6567192A8DC9008AF5BA /* VTDListWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		5584BC2F192BFD06006BE9FC /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				5584BC30192BFD06006BE9FC /* Application Logic */,
+				559998CA192E54BC0093721B /* Module Interface */,
+				5584BC34192BFD06006BE9FC /* User Interface */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		5584BC30192BFD06006BE9FC /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				5584BC31192BFD06006BE9FC /* Interactor */,
+				5584BC32192BFD06006BE9FC /* Manager */,
+				5584BC33192BFD06006BE9FC /* Model */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		5584BC31192BFD06006BE9FC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				559998C7192E51400093721B /* VTDAddInteractor.h */,
+				559998C8192E51400093721B /* VTDAddInteractor.m */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5584BC32192BFD06006BE9FC /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				55999880192D47BE0093721B /* VTDAddDataManager.h */,
+				55999881192D47BE0093721B /* VTDAddDataManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5584BC33192BFD06006BE9FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5584BC34192BFD06006BE9FC /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				5584BC35192BFD06006BE9FC /* Presenter */,
+				5584BC36192BFD06006BE9FC /* Transition */,
+				5584BC37192BFD06006BE9FC /* View */,
+				5584BC38192BFD06006BE9FC /* Wireframe */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		5584BC35192BFD06006BE9FC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5584BC40192BFDBA006BE9FC /* VTDAddPresenter.h */,
+				5584BC41192BFDBA006BE9FC /* VTDAddPresenter.m */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5584BC36192BFD06006BE9FC /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				5584BC44192C0683006BE9FC /* VTDAddDismissalTransition.h */,
+				5584BC45192C0683006BE9FC /* VTDAddDismissalTransition.m */,
+				5584BC46192C0683006BE9FC /* VTDAddPresentationTransition.h */,
+				5584BC47192C0683006BE9FC /* VTDAddPresentationTransition.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		5584BC37192BFD06006BE9FC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5584BC39192BFD8A006BE9FC /* VTDAddViewController.h */,
+				5584BC3A192BFD8A006BE9FC /* VTDAddViewController.m */,
+				5584BC3C192BFD9B006BE9FC /* VTDAddViewInterface.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5584BC38192BFD06006BE9FC /* Wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				5584BC3D192BFDAC006BE9FC /* VTDAddWireframe.h */,
+				5584BC3E192BFDAC006BE9FC /* VTDAddWireframe.m */,
+			);
+			path = Wireframe;
+			sourceTree = "<group>";
+		};
+		5584BC4A192C07C6006BE9FC /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				CF775178192FE75E00B86F79 /* NSArray+HOM.h */,
+				CF775179192FE75E00B86F79 /* NSArray+HOM.m */,
+				5584BC4B192C07C6006BE9FC /* NSCalendar+CalendarAdditions.h */,
+				5584BC4C192C07C6006BE9FC /* NSCalendar+CalendarAdditions.m */,
+				5584BC4D192C07C6006BE9FC /* UIImage+ImageEffects.h */,
+				5584BC4E192C07C6006BE9FC /* UIImage+ImageEffects.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		559998CA192E54BC0093721B /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				559998CB192E54D20093721B /* VTDAddModuleDelegateInterface.h */,
+				559998CE192E621A0093721B /* VTDAddModuleInterface.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		559998CC192E61A50093721B /* Module Interface */ = {
+			isa = PBXGroup;
+			children = (
+				559998CD192E61B20093721B /* VTDListModuleInterface.h */,
+			);
+			path = "Module Interface";
+			sourceTree = "<group>";
+		};
+		559998D0192E71040093721B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				559998DC192E71460093721B /* VTDTodoItem.h */,
+				559998DD192E71460093721B /* VTDTodoItem.m */,
+				CF775174192FB28700B86F79 /* VTDNearTermDateRelation.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		559998D1192E71040093721B /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				559998D2192E71040093721B /* Entities */,
+				559998D5192E71040093721B /* TODO.xcdatamodeld */,
+				559998D7192E71040093721B /* VTDCoreDataStore.h */,
+				559998D8192E71040093721B /* VTDCoreDataStore.m */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		559998D2192E71040093721B /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				559998D3192E71040093721B /* VTDManagedTodoItem.h */,
+				559998D4192E71040093721B /* VTDManagedTodoItem.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		CF77517E1935298C00B86F79 /* OCMock */ = {
+			isa = PBXGroup;
+			children = (
+				CF775181193529E400B86F79 /* NSNotificationCenter+OCMAdditions.h */,
+				CF775182193529E400B86F79 /* OCMArg.h */,
+				CF775183193529E400B86F79 /* OCMConstraint.h */,
+				CF775184193529E400B86F79 /* OCMock.h */,
+				CF775185193529E400B86F79 /* OCMockObject.h */,
+				CF775186193529E400B86F79 /* OCMockRecorder.h */,
+			);
+			name = OCMock;
+			sourceTree = "<group>";
+		};
+		CF77518819352EBD00B86F79 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				CF77518919352ED300B86F79 /* VTDClock.h */,
+				CF77518A19355B7600B86F79 /* VTDDeviceClock.h */,
+				CF77518B19355B7600B86F79 /* VTDDeviceClock.m */,
+			);
+			name = Clock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		557C64C6192A782C008AF5BA /* VIPER TODO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557C64F9192A782C008AF5BA /* Build configuration list for PBXNativeTarget "VIPER TODO" */;
+			buildPhases = (
+				557C64C3192A782C008AF5BA /* Sources */,
+				557C64C4192A782C008AF5BA /* Frameworks */,
+				557C64C5192A782C008AF5BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VIPER TODO";
+			productName = "VIPER TODO";
+			productReference = 557C64C7192A782C008AF5BA /* VIPER TODO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		557C64E7192A782C008AF5BA /* VIPER TODOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 557C64FC192A782C008AF5BA /* Build configuration list for PBXNativeTarget "VIPER TODOTests" */;
+			buildPhases = (
+				557C64E4192A782C008AF5BA /* Sources */,
+				557C64E5192A782C008AF5BA /* Frameworks */,
+				557C64E6192A782C008AF5BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				557C64EE192A782C008AF5BA /* PBXTargetDependency */,
+			);
+			name = "VIPER TODOTests";
+			productName = "VIPER TODOTests";
+			productReference = 557C64E8192A782C008AF5BA /* VIPER TODOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		557C64BF192A782C008AF5BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VTD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Mutual Mobile";
+				TargetAttributes = {
+					557C64E7192A782C008AF5BA = {
+						TestTargetID = 557C64C6192A782C008AF5BA;
+					};
+				};
+			};
+			buildConfigurationList = 557C64C2192A782C008AF5BA /* Build configuration list for PBXProject "VIPER TODO" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 557C64BE192A782C008AF5BA;
+			productRefGroup = 557C64C8192A782C008AF5BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				557C64C6192A782C008AF5BA /* VIPER TODO */,
+				557C64E7192A782C008AF5BA /* VIPER TODOTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		557C64C5192A782C008AF5BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5519B141192FC6D800537ED4 /* Images.xcassets in Resources */,
+				557C64D5192A782C008AF5BA /* InfoPlist.strings in Resources */,
+				CF775170192EAF7800B86F79 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557C64E6192A782C008AF5BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				557C64F4192A782C008AF5BA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		557C64C3192A782C008AF5BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5584BC42192BFDBA006BE9FC /* VTDAddPresenter.m in Sources */,
+				CF775177192FCCFA00B86F79 /* VTDUpcomingDisplayDataCollector.m in Sources */,
+				559998DE192E71460093721B /* VTDTodoItem.m in Sources */,
+				CF77517A192FE75E00B86F79 /* NSArray+HOM.m in Sources */,
+				5584BC3F192BFDAC006BE9FC /* VTDAddWireframe.m in Sources */,
+				557C6563192A8C77008AF5BA /* VTDListPresenter.m in Sources */,
+				55999882192D47BE0093721B /* VTDAddDataManager.m in Sources */,
+				5584BC50192C07C6006BE9FC /* UIImage+ImageEffects.m in Sources */,
+				557C6564192A8C77008AF5BA /* VTDListViewController.m in Sources */,
+				CF77516A192EAB4300B86F79 /* VTDUpcomingDisplaySection.m in Sources */,
+				559998C9192E51400093721B /* VTDAddInteractor.m in Sources */,
+				557C655F192A8C77008AF5BA /* VTDListDataManager.m in Sources */,
+				557C6568192A8DC9008AF5BA /* VTDListWireframe.m in Sources */,
+				557C653D192A7C8D008AF5BA /* VTDRootWireframe.m in Sources */,
+				5584BC3B192BFD8A006BE9FC /* VTDAddViewController.m in Sources */,
+				559998DB192E71040093721B /* VTDCoreDataStore.m in Sources */,
+				559998DA192E71040093721B /* TODO.xcdatamodeld in Sources */,
+				CF775173192FB24F00B86F79 /* VTDUpcomingItem.m in Sources */,
+				CF77516D192EAB9A00B86F79 /* VTDUpcomingDisplayItem.m in Sources */,
+				557C650B192A7909008AF5BA /* VTDAppDelegate.m in Sources */,
+				557C655E192A8C77008AF5BA /* VTDListInteractor.m in Sources */,
+				CF77518C19355B7600B86F79 /* VTDDeviceClock.m in Sources */,
+				55999885192D493E0093721B /* VTDAppDependencies.m in Sources */,
+				559998D9192E71040093721B /* VTDManagedTodoItem.m in Sources */,
+				5584BC4F192C07C6006BE9FC /* NSCalendar+CalendarAdditions.m in Sources */,
+				CF775167192EAB0300B86F79 /* VTDUpcomingDisplayData.m in Sources */,
+				557C64D7192A782C008AF5BA /* main.m in Sources */,
+				5584BC49192C0683006BE9FC /* VTDAddPresentationTransition.m in Sources */,
+				5584BC48192C0683006BE9FC /* VTDAddDismissalTransition.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		557C64E4192A782C008AF5BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFEAA0EE192B5BBB006C8048 /* VTDCalendarTests.m in Sources */,
+				CFEAA0E9192B0143006C8048 /* VTDRelativeDateTests.m in Sources */,
+				557C64F6192A782C008AF5BA /* VIPER_TODOTests.m in Sources */,
+				CF77518E19375DF600B86F79 /* VTDListPresenterTests.m in Sources */,
+				CF77517C19350DF600B86F79 /* VTDListInteractorTests.m in Sources */,
+				CF7751901938B00400B86F79 /* VTDListViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		557C64EE192A782C008AF5BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 557C64C6192A782C008AF5BA /* VIPER TODO */;
+			targetProxy = 557C64ED192A782C008AF5BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		557C64D3192A782C008AF5BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557C64D4192A782C008AF5BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		557C64F2192A782C008AF5BA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				557C64F3192A782C008AF5BA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF77516E192EAF7800B86F79 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF77516F192EAF7800B86F79 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		557C64F7192A782C008AF5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		557C64F8192A782C008AF5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		557C64FA192A782C008AF5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VIPER TODO/VIPER TODO-Prefix.pch";
+				INFOPLIST_FILE = "VIPER TODO/VIPER TODO-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		557C64FB192A782C008AF5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VIPER TODO/VIPER TODO-Prefix.pch";
+				INFOPLIST_FILE = "VIPER TODO/VIPER TODO-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		557C64FD192A782C008AF5BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VIPER TODO.app/VIPER TODO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VIPER TODO/VIPER TODO-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/OCMock",
+				);
+				INFOPLIST_FILE = "VIPER TODOTests/VIPER TODOTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-force_load",
+					"\"$(SRCROOT)/OCMock/libOCMock.a\"",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		557C64FE192A782C008AF5BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VIPER TODO.app/VIPER TODO";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VIPER TODO/VIPER TODO-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/OCMock",
+				);
+				INFOPLIST_FILE = "VIPER TODOTests/VIPER TODOTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OCMock",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-force_load",
+					"\"$(SRCROOT)/OCMock/libOCMock.a\"",
+					"-ObjC",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		557C64C2192A782C008AF5BA /* Build configuration list for PBXProject "VIPER TODO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557C64F7192A782C008AF5BA /* Debug */,
+				557C64F8192A782C008AF5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557C64F9192A782C008AF5BA /* Build configuration list for PBXNativeTarget "VIPER TODO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557C64FA192A782C008AF5BA /* Debug */,
+				557C64FB192A782C008AF5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		557C64FC192A782C008AF5BA /* Build configuration list for PBXNativeTarget "VIPER TODOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				557C64FD192A782C008AF5BA /* Debug */,
+				557C64FE192A782C008AF5BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		559998D5192E71040093721B /* TODO.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				559998D6192E71040093721B /* TODO.xcdatamodel */,
+			);
+			currentVersion = 559998D6192E71040093721B /* TODO.xcdatamodel */;
+			path = TODO.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 557C64BF192A782C008AF5BA /* Project object */;
+}

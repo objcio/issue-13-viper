@@ -56,7 +56,6 @@
     toVC.transitioningBackgroundView = blurView;
     
 	UIView *containerView = [transitionContext containerView];
-    [containerView addSubview:fromVC.view];
     [containerView addSubview:blurView];
 	[containerView addSubview:toVC.view];
     

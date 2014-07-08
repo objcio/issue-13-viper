@@ -25,8 +25,6 @@
 
 #import "VTDListModuleInterface.h"
 
-@class VTDListViewController;
-
 @interface VTDRootWireframe : NSObject
 
 - (void)showRootViewController:(UIViewController *)viewController

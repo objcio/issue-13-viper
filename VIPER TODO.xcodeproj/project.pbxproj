@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5519B141192FC6D800537ED4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5519B140192FC6D800537ED4 /* Images.xcassets */; };
-		55397FD0960D14C09A2F67AE /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 55397051984DA0785E388C78 /* .gitignore */; };
 		557C64CB192A782C008AF5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557C64CA192A782C008AF5BA /* Foundation.framework */; };
 		557C64CD192A782C008AF5BA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557C64CC192A782C008AF5BA /* CoreGraphics.framework */; };
 		557C64CF192A782C008AF5BA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 557C64CE192A782C008AF5BA /* UIKit.framework */; };
@@ -69,7 +68,6 @@
 
 /* Begin PBXFileReference section */
 		5519B140192FC6D800537ED4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = "VIPER TODO/Images.xcassets"; sourceTree = SOURCE_ROOT; };
-		55397051984DA0785E388C78 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = file.gitignore; path = .gitignore; sourceTree = "<group>"; };
 		557C64C7192A782C008AF5BA /* VIPER TODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VIPER TODO.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		557C64CA192A782C008AF5BA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		557C64CC192A782C008AF5BA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -195,7 +193,6 @@
 				557C64EF192A782C008AF5BA /* VIPER TODOTests */,
 				557C64C9192A782C008AF5BA /* Frameworks */,
 				557C64C8192A782C008AF5BA /* Products */,
-				55397051984DA0785E388C78 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -662,7 +659,6 @@
 				5519B141192FC6D800537ED4 /* Images.xcassets in Resources */,
 				557C64D5192A782C008AF5BA /* InfoPlist.strings in Resources */,
 				CF775170192EAF7800B86F79 /* Main.storyboard in Resources */,
-				55397FD0960D14C09A2F67AE /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

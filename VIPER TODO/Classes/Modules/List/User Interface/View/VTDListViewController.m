@@ -103,7 +103,7 @@ static NSString* const VTDListEntryCellIdentifier = @"VTDListEntryCell";
 
 - (void)reloadEntries
 {
-    [self.tableView reloadData];
+    [self.strongTableView reloadData];
 }
 
 
